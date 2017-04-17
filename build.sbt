@@ -8,3 +8,5 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
   
 libraryDependencies += jdbc
 libraryDependencies += "com.adrianhurt" %% "play-bootstrap" % "1.0-P25-B3"
+
+resolvers += "nexus repository" at "http://nexus-ci-cd.apps.192.168.1.134.nip.io/repository/development/"
